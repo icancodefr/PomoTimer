@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer {
+  font-size: 8em;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#mode {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#config-indicator {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+#config-area {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.config-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.config-section label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.time-input {
+  width: 60px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.config-active {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

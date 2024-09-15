@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - PomTimer</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="timer">00:00:00</div>
+    <div id="mode">Study</div>
+    <div id="config-indicator">Press 'S' to enter config mode</div>
+    <div id="config-area">
+      <div class="config-section">
+        <label for="study-hours">Study Time:</label>
+        <input type="number" id="study-hours" class="time-input" value="00" min="0" max="23">
+        <span>:</span>
+        <input type="number" id="study-minutes" class="time-input" value="25" min="0" max="59">
+        <span>:</span>
+        <input type="number" id="study-seconds" class="time-input" value="00" min="0" max="59">
+      </div>
+      <div class="config-section">
+        <label for="break-hours">Break Time:</label>
+        <input type="number" id="break-hours" class="time-input" value="00" min="0" max="23">
+        <span>:</span>
+        <input type="number" id="break-minutes" class="time-input" value="05" min="0" max="59">
+        <span>:</span>
+        <input type="number" id="break-seconds" class="time-input" value="00" min="0" max="59">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
